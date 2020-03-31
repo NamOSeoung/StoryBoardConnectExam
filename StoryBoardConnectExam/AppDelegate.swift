@@ -13,8 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
+    //메인스토리보드에 연결된 init view를 열 때 호출되는 함수이므로 여기에서 쓰레드로 메인뷰를 열 시간을 지연시킬 수있다.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Thread.sleep(forTimeInterval: 2.0)// 지연시킬 splash시간
         return true
     }
 

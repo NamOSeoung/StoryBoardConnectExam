@@ -30,7 +30,13 @@ import UIKit
  ex)depth1. 로그인 화면 -> 회원가입 화면
     depth2. 회원가입화면 -> 로그인 화면 ==> 이때 회원가입 화면을 제거(dismiss)하면 로그인화면으로 돌아감.
  
+ 
+ 참고 url : https://lazyowl.tistory.com/43
  */
+
+
+//*** 스플래시 적용하는데 캐시문제가 있을 수 있으니 적용 후 앱 삭제 후 다시 적용해보면 확인이 가능하다.
+
 
 class ViewController: UIViewController {
 
