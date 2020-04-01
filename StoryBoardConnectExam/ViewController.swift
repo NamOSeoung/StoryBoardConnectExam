@@ -43,6 +43,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //mainTabWrap
     }
 
 
@@ -51,6 +53,13 @@ class ViewController: UIViewController {
                    return
                }
                self.present(nextVC, animated: true)
+    }
+    
+    @IBAction func goMain(_ sender: UIButton) {
+        let RepplerMainStoryBoard: UIStoryboard = UIStoryboard.init(name: "RipplerMain", bundle: nil) //RipplerMainStoryBoard 객체 생성
+        let repplerVC = RepplerMainStoryBoard.instantiateViewController(identifier: "mainTabWrap") //우편함 피드, 관심사 피드 탭을 감싸고있는 tapWrap Storyboard 에 대한 부분 호출
+        self.present(repplerVC, animated: true)
+        
     }
 }
 
